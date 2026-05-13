@@ -31,11 +31,11 @@ Below is the definitive evaluation of performance tracking from initial generati
 
 | Model Generation | Model / Strategy | ROC-AUC | PR-AUC | Brier Score | Precision | Recall | F1-Score |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Gen 1 (Baseline)** | Baseline Random Forest | 0.7385 | 0.3319 | 0.1177 | 0.2896 | 0.6442 | 0.3992 |
-| **Gen 1 (Baseline)** | Baseline LightGBM | 0.7504 | 0.3545 | 0.2033 | 0.3040 | 0.6223 | 0.4082 |
-| **Gen 3 (Optimized)** | **LightGBM (The Precision Engine)** | 0.8058 | 0.4295 | 0.1867 | 0.3623 | 0.6174 | 0.4566 |
-| **Gen 3 (Optimized)** | **HIR-M3 (The Structural Expert)** | 0.8007 | 0.4120 | **0.1090** | 0.3584 | 0.6260 | 0.4558 |
-| **Gen 3 (Final)** | **Hybrid Ensemble (10% HIR-M3 + 90% LGBM)**| **0.8065** | **0.4200** | 0.1206 | 0.3581 | 0.6320 | 0.4572 |
+| **Baseline** | Baseline Random Forest | 0.7385 | 0.3319 | 0.1177 | 0.2896 | 0.6442 | 0.3992 |
+| **Baseline** | Baseline LightGBM | 0.7504 | 0.3545 | 0.2033 | 0.3040 | 0.6223 | 0.4082 |
+| **Optimized** | **LightGBM (The Precision Engine)** | 0.8058 | 0.4295 | 0.1867 | 0.3623 | 0.6174 | 0.4566 |
+| **Optimized** | **HIR-M3 (The Structural Expert)** | 0.8007 | 0.4120 | **0.1090** | 0.3584 | 0.6260 | 0.4558 |
+| **Final** | **Hybrid Ensemble (10% HIR-M3 + 90% LGBM)**| **0.8065** | **0.4200** | 0.1206 | 0.3581 | 0.6320 | 0.4572 |
 
 ### Key Findings
 *   **The Flat Tabular Blindspot**: While LightGBM achieved a high 0.8058 AUC, it yielded a Brier Score of 0.1867, indicating severe probability miscalibration.
